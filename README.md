@@ -27,7 +27,7 @@ Foi criada uma tela de "Login" na nossa aplicação. O seu trabalho vai ser:
 - Agrupar esses dados em uma única variável
 - Assim que o usuário clicar em "Fazer login", o nome e a foto de perfil devem aparecer dentro do componente `Header` da aplicação. A imagem e o nome devem seguir as seguintes especificações: 
     - Você pode usar o link da sua foto de perfil do Linkedin
-    - A imagem será redonda e terá 72px de altura e 72px de largura
+    - A imagem será redonda e terá 50px de altura e 50px de largura
     - O nome do usuário deverá estar alinhado à imagem
     - ambos estarão alinhados à esquerda da logo `Insta4`
     
