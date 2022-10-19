@@ -37,7 +37,7 @@ Você pode reaproveitar a função `login` dentro do componente `FormularioLogin
 # Exercício 2
 ## Colocando a mão na massa para o Exercício 2.
 
-##O Exercício 2 está dividido em duas partes: análise de código e execução de algumas tarefas!
+## O Exercício 2 está dividido em duas partes: análise de código e execução de algumas tarefas!
 
 Primeiro, vamos analisar todo o código que vocês estão recebendo.
 
