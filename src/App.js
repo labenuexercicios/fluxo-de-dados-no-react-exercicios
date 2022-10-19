@@ -4,6 +4,7 @@ import FormularioPostagem from "./components/FormularioPostagem/FormularioPostag
 import { Header } from "./components/Header";
 import TelaDaPostagem from "./components/TelaDaPostagem/TelaDaPostagem";
 import FormularioLogin from "./components/FormularioLogin/FormularioLogin";
+
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -20,14 +21,24 @@ const Container = styled.div`
 
 function App() {
   const [pageFlow, setPageFlow] = useState(1);
+  const [nome, setNome] = useState("")
+  const [foto, setFoto] = useState("")
+  const [objeto, setObjeto] = useState("")
+  
   return (
     <>
       <GlobalStyle />
       <Container>
         <aside>
           <Header />
+          {objeto}={objeto}
           {pageFlow === 1 ? (
-            <FormularioLogin setPageFlow={setPageFlow} />
+            <FormularioLogin
+            nome={nome}
+            setNome={setNome}
+            foto={foto}
+            setFoto={setFoto}
+            />
           ) : (
             <FormularioPostagem />
           )}
