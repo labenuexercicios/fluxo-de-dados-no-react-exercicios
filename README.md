@@ -49,8 +49,8 @@ Você **não precisa** responder às questões abaixo dentro de seu projeto, mas
 - Um comportamento que faria mais sentido seria existir um botão que ao clicar, a imagem, título e descrição aparecerem na tela, você conseguiria aplicar esta funcionalidade? Siga os passos a seguir para saber se você cumpriu todos os requisitos.
 
 
-**- Encontre uma forma de agrupar as informações dos 3 inputs em uma única variável de estado
+- Encontre uma forma de agrupar as informações dos 3 inputs em uma única variável de estado
 - Ao invés de usar as variáveis de estado que controlam os inputs para mostrar o conteúdo na tela, use o novo estado que você criou
 - Provavelmente, se os valores dessa sua nova variável forem `undefined` em algum momento, a sua página vai quebrar. Como você resolveria isso?
-- Já existe um botão estilizado no arquivo styles do componente `FormularioCadastro`, use este botão e aplique uma função de onClick onde, ao clicar, a postagem apareça no espaço à direita da tela**
+- Já existe um botão estilizado no arquivo styles do componente `FormularioCadastro`, use este botão e aplique uma função de onClick onde, ao clicar, a postagem apareça no espaço à direita da tela
 
