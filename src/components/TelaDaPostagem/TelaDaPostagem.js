@@ -2,13 +2,13 @@ import React from "react";
 import { TitleHeader } from "../Header/styled";
 import { ContainerPostagem, Image, Description } from "./styles";
 
-const TelaDaPostagem = () => {
+const TelaDaPostagem = (props) => {
 
   return (
     <ContainerPostagem>
-      <TitleHeader>Um titulo</TitleHeader>
-      <Image src={"https://picsum.photos/536/354"} />
-      <Description>Uma descrição</Description>
+      <TitleHeader>{props.title}</TitleHeader>
+      <Image src={props.post} />
+      <Description>{props.describe}</Description>
     </ContainerPostagem>
   );
 };
