@@ -8,6 +8,7 @@ export const FormularioCadastro = () => {
         <StyledLabel htmlFor="titulo">
           Titulo:
           <Input id="titulo" />
+          onChangeNome=
         </StyledLabel>
         <StyledLabel htmlFor="foto">
           Imagem:
