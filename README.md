@@ -1,10 +1,10 @@
-# Inputs Controlados
+# Fluxo de Dados
 
 Caso não lembre como funciona o processo de entrega, clique [**aqui**](https://github.com/labenuexercicios/instrucoes-entrega)
 
 
 ## Como eu vou executar os exercícios?
-Para o exercício de hoje, vamos utilizar um template! Dentro desse template vocês vão encontrar a estrutura que trabalhamos hoje de manhã, então é um código que vocês já conhecem! 
+Para o exercício de hoje, vamos utilizar um template! Dentro desse template vocês vão encontrar a estrutura que trabalhamos na aula ao vivo, então é um código que vocês já conhecem! 
 
 
 Para executar este exercício, você pode criar uma nova aplicação React, utilizar o **CodeSandbox** ou usar este template do repositório.
@@ -15,7 +15,7 @@ Caso queira criar uma nova aplicação React, basta copiar os conteúdos deste r
 
 Hoje vimos que o gerenciamento de estado precisa ser pensado de uma forma que seja possível compartilhar dados entre todos os componentes da nossa aplicação. Às vezes precisamos modificar toda a estrutura de estados para que seja possível resolver certos problemas de props, já que só podemos passar props de pai pra filho.
 
-Durante a aula de hoje vocês conseguiram trabalhar essa movimentação do estado para um nível superior, nesse caso, o `App,js`. No exercício de hoje à tarde vamos implementar mais algumas funcionalidades à aplicação, já que ela trazia alguns problemas esquisitos.
+Durante a aula vocês conseguiram trabalhar essa movimentação do estado para um nível superior, nesse caso, o `App,js`. Agora vamos implementar mais algumas funcionalidades à aplicação, já que ela trazia alguns problemas esquisitos.
 
 # Exercício 1
 
