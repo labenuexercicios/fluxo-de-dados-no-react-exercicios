@@ -2,15 +2,17 @@ import React from "react";
 import { TitleHeader } from "../Header/styled";
 import { ContainerPostagem, Image, Description } from "./styles";
 
-const TelaDaPostagem = () => {
-
+const TelaDaPostagem = (props) => {
+  console.log("TelaDaPostagem(props)", props);
   return (
     <ContainerPostagem>
-      <TitleHeader>Um titulo</TitleHeader>
-      <Image src={"https://picsum.photos/536/354"} />
-      <Description>Uma descrição</Description>
+      <TitleHeader>{props.cadastro.titulo}</TitleHeader>
+      <Image src={props.cadastro.imagem} />
+      <Description>{props.cadastro.descricao}</Description>
     </ContainerPostagem>
   );
 };
 
 export default TelaDaPostagem;
+
+// "https://picsum.photos/536/354"
