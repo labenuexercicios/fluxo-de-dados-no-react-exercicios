@@ -1,3 +1,4 @@
+import { getValue } from "@testing-library/user-event/dist/utils";
 import React from "react";
 import {
   Form,
@@ -8,6 +9,15 @@ import {
 } from "../FormularioPostagem/styled";
 
 const FormularioLogin = (props) => {
+
+const onChangeNome = (event)=>{
+  props.setNome(event.target.value)
+}
+const onChangeFoto=(event)=>{
+  props.setFoto(event.target.value)
+
+}
+
   const login = () => {
     props.setPageFlow(2);
   };
@@ -16,11 +26,11 @@ const FormularioLogin = (props) => {
       <Form>
         <StyledLabel>
           Nome:
-          <Input type={"text"} />
+          <Input type={"text"} value={props.nome} onChange={onChangeNome} />
         </StyledLabel>
         <StyledLabel>
           Foto de Perfil
-          <Input type={"text"} />
+          <Input type={"text"} value={props.foto} onChange={onChangeFoto} />
         </StyledLabel>
         <SendButton onClick={login}>Fazer Login</SendButton>
       </Form>
