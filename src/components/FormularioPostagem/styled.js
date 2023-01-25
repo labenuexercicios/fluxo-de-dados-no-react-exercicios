@@ -10,7 +10,7 @@ export const FormContainer = styled.div`
 
 export const Form = styled.div`
     width: 40vw;
-    height: 40vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +21,7 @@ export const Form = styled.div`
 export const Input = styled.input`
     padding: 8px;
     margin-left: 16px;
+    border: 1px solid black;
 `
 
 export const SendButton = styled.button`
@@ -40,3 +41,8 @@ export const StyledLabel = styled.label`
     align-items: center;
     justify-content: space-between;
 `
+
+// export const Description = styled.p`
+//     max-width: 500px;
+//     padding-top: 1rem;
+// `
