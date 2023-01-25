@@ -1,7 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { useState } from "react";
 import FormularioPostagem from "./components/FormularioPostagem/FormularioPostagem";
-import { Header } from "./components/Header";
 import TelaDaPostagem from "./components/TelaDaPostagem/TelaDaPostagem";
 import FormularioLogin from "./components/FormularioLogin/FormularioLogin";
 const GlobalStyle = createGlobalStyle`
@@ -19,20 +18,60 @@ const Container = styled.div`
 `;
 
 function App() {
+
+  const [nome, setNome] = useState("");
+  const [imagemdeperfil, setImagemdeperfil] = useState("");
+  const [titulo, setTitulo] = useState("");
+  const [imagem, setImagem] = useState("")
+  const [descricao, setDescricao] = useState("")
+  const [enviapage, setEnviapage] = useState(1);
+
+
+
   const [pageFlow, setPageFlow] = useState(1);
   return (
     <>
       <GlobalStyle />
       <Container>
         <aside>
-          <Header />
-          {pageFlow === 1 ? (
-            <FormularioLogin setPageFlow={setPageFlow} />
+
+        {pageFlow === 1 ? (
+            <FormularioLogin
+             setPageFlow={setPageFlow}
+             nome = {nome}
+             imagemdeperfil = {imagemdeperfil}
+             setNome = {setNome}
+             setImagemdeperfil = {setImagemdeperfil} 
+             />
           ) : (
-            <FormularioPostagem />
+            <FormularioPostagem 
+            nome = {nome}
+            imagemdeperfil = {imagemdeperfil}
+            setNome = {setNome}
+            setImagemdeperfil = {setImagemdeperfil} 
+            titulo = {titulo}
+            imagem = {imagem}
+            descricao = {descricao}
+            setTitulo = {setTitulo}
+            setImagem = {setImagem}
+            setDescricao = {setDescricao}
+            enviapage = {enviapage}
+            setEnviapage = {setEnviapage}
+            setPageFlow = {setPageFlow}
+            />
           )}
         </aside>
-        <TelaDaPostagem />
+        {enviapage === 2 ? (
+        <TelaDaPostagem 
+        titulo = {titulo}
+        imagem = {imagem}
+        descricao = {descricao}
+        setTitulo = {setTitulo}
+        setImagem = {setImagem}
+        setDescricao = {setDescricao}
+        />
+        ) :(<aside></aside>)
+      }
       </Container>
     </>
   );
