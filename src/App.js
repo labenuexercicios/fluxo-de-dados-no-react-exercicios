@@ -1,9 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { useState } from "react";
 import FormularioPostagem from "./components/FormularioPostagem/FormularioPostagem";
 import { Header } from "./components/Header";
 import TelaDaPostagem from "./components/TelaDaPostagem/TelaDaPostagem";
-import FormularioLogin from "./components/FormularioLogin/FormularioLogin";
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -19,18 +17,13 @@ const Container = styled.div`
 `;
 
 function App() {
-  const [pageFlow, setPageFlow] = useState(1);
   return (
     <>
       <GlobalStyle />
       <Container>
         <aside>
           <Header />
-          {pageFlow === 1 ? (
-            <FormularioLogin setPageFlow={setPageFlow} />
-          ) : (
             <FormularioPostagem />
-          )}
         </aside>
         <TelaDaPostagem />
       </Container>

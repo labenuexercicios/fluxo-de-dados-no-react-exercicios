@@ -17,40 +17,50 @@ Hoje vimos que o gerenciamento de estado precisa ser pensado de uma forma que se
 
 Durante a aula vocês conseguiram trabalhar essa movimentação do estado para um nível superior, nesse caso, o `App,js`. Agora vamos implementar mais algumas funcionalidades à aplicação, já que ela trazia alguns problemas esquisitos.
 
-# Exercício 1
+# Parte 2:
+## interpretação de código
 
-## Colocando a mão na massa para o exercício 1: 
-
-Foi criada uma tela de "Login" na nossa aplicação. O seu trabalho vai ser:
-
-- Controlar os inputs corretamente
-- Agrupar esses dados em uma única variável
-- Assim que o usuário clicar em "Fazer login", o nome e a foto de perfil devem aparecer dentro do componente `Header` da aplicação. A imagem e o nome devem seguir as seguintes especificações: 
-    - Você pode usar o link da sua foto de perfil do Linkedin
-    - A imagem será redonda e terá 50px de altura e 50px de largura
-    - O nome do usuário deverá estar alinhado à imagem
-    - ambos estarão alinhados à esquerda da logo `Insta4`
-    
-Um comportamento que já está implementado é o de troca de tela. Assim que clicamos no botão de login, somos levados para a próxima etapa do formulário, onde é possível fazer uma postagem no site.
-Você pode reaproveitar a função `login` dentro do componente `FormularioLogin.js` para implementar as funcionalidades que farão o nome e foto de perfil aparecerem no `Header` 
-
-
-# Exercício 2
-## Colocando a mão na massa para o Exercício 2.
-
-## O Exercício 2 está dividido em duas partes: análise de código e execução de algumas tarefas!
-
-Primeiro, vamos analisar todo o código que vocês estão recebendo.
+Primeiro, vamos analisar todo o código que você está recebendo.
 
 Você **não precisa** responder às questões abaixo dentro de seu projeto, mas é importante que leia o projeto e reflita sobre os questionamentos antes de prosseguir.
 
+- Você recebeu um app já iniciado, com alguns componentes. O que cada componente faz?
+- Pense na tela que você recebeu pronta e crie uma estrutura para ela, não é obrigatório, mas se quiser pode listar os componentes que faria ou mesmo desenhar essa organização em um papel isso ajuda muito a pensar em como é feito ou como iniciar um site.
+- Você consegue entender a organização desta componentização ou faria diferente?
+
+
+# Parte 2:
+## mão na massa! (ou no código)
+
+### exercício 1:
+- **Primeiro:** você já leu a primeira parte e seguiu o passo a passo da leitura e interpretação do código?
+
+- Controlar os inputs corretamente:
+No arquivo `FormularioPostagem.js` temos 3 inputs que estão sem controle. Crie os estados necessários e faça o controle deles.
+
+### exercício 2:
+- Você deve ter notado que os dados já estão sendo salvos, mas não acessados no componente final. Pense no fluxo para que eles cheguem até lá:
+
+1. estes dados são criados em qual componente?
+2. os mesmos dados estão sendo modificados onde?
+3. qual o componente precisa acessá-los?
+
+A partir deste fluxo que você pensou, crie o código para que os dados enviados no input sejam exibidos na tela do lado direito (onde atualmente há atualmente um título, uma imagem e uma descrição fixos). 
+
+**Dica:** este é um bom momento para usar aquele desenho ou esquema da parte 1, de como seriam os componentes, para tentar entender o fluxo e ter uma melhor visibilidade
+
+### exercício 3:
 - Você deve ter percebido que a página não possui um botão e assim que passamos as props corretamente, a imagem e descrição já aparecem em tempo real. Consegue entender o motivo disso acontecer?
 
-- Um comportamento que faria mais sentido seria existir um botão que ao clicar, a imagem, título e descrição aparecerem na tela, você conseguiria aplicar esta funcionalidade? Siga os passos a seguir para saber se você cumpriu todos os requisitos.
+- Encontre uma forma de agrupar as informações dos 3 inputs editados no exercício 1 em uma única variável de estado;
 
+- Um comportamento que faria mais sentido seria existir um botão que ,ao clicar, exibiria a imagem, título e descrição na tela. Crie este botão e a função necessária para que o usuário possa ter o controle deste envio;
 
-- Encontre uma forma de agrupar as informações dos 3 inputs em uma única variável de estado
-- Ao invés de usar as variáveis de estado que controlam os inputs para mostrar o conteúdo na tela, use o novo estado que você criou
+- Modifique o seu código, que atualmente usa as variáveis de estado que controlam os inputs para mostrar o conteúdo na tela, para que o novo estado que você criou seja responsável por isso;
+
 - Provavelmente, se os valores dessa sua nova variável forem `undefined` em algum momento, a sua página vai quebrar. Como você resolveria isso?
-- Já existe um botão estilizado no arquivo styles do componente `FormularioCadastro`, use este botão e aplique uma função de onClick onde, ao clicar, a postagem apareça no espaço à direita da tela
+
+- Já existe um botão estilizado no arquivo styles do componente `FormularioPostagem`, use este botão e aplique uma função de onClick onde, ao clicar, a postagem apareça no espaço à direita da tela;
+
+
 
