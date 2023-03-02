@@ -20,19 +20,50 @@ const Container = styled.div`
 
 function App() {
   const [pageFlow, setPageFlow] = useState(1);
+  
+  const[inputName,setInputName]=useState("")
+  const [inputProFilePicture,setInputProFilePicture]=useState("")
+  const [newLogin,setNewLoguin]=useState({})
+
+  const [inputTitulo,setInputTitulo]=useState("")
+  const [inputImagem,setInputImagem]=useState("")
+  const [inputDescricao,setInputDescricao]=useState("")
+  const [newAtualizar,setNewAtualizar]=useState({})
+
+  const atualizar=()=>{
+    setNewAtualizar({
+      titulo:inputTitulo,
+      imagem:inputImagem,
+      descricao:inputDescricao
+    })
+  }
+
+  
+  const login = () => {
+    setPageFlow(2);
+    setNewLoguin({
+      nome:inputName,
+      imagem:inputProFilePicture
+    })
+
+  };
+  
+
   return (
     <>
       <GlobalStyle />
       <Container>
         <aside>
-          <Header />
+          <Header newLogin={newLogin}/>
           {pageFlow === 1 ? (
-            <FormularioLogin setPageFlow={setPageFlow} />
+            <FormularioLogin login={login} inputName={inputName} setInputName={setInputName}
+            inputProFilePicture={inputProFilePicture} setInputProFilePicture={setInputProFilePicture} />
           ) : (
-            <FormularioPostagem />
+            <FormularioPostagem atualizar={atualizar} inputTitulo={inputTitulo} setInputTitulo={setInputTitulo} inputImagem={inputImagem} setInputImagem={setInputImagem}
+            inputDescricao={inputDescricao} setInputDescricao={setInputDescricao}/>
           )}
         </aside>
-        <TelaDaPostagem />
+        <TelaDaPostagem newAtualizar={newAtualizar}/>
       </Container>
     </>
   );
