@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const ContainerPostagem = styled.div`
     width: 100%;
     background-color: #f8f3ee;
@@ -9,6 +8,8 @@ export const ContainerPostagem = styled.div`
     justify-content: center;
     align-items: center;
 `
+
+export const Title = styled.h2``
 
 export const Image = styled.img`
     border-radius: 0.5rem;

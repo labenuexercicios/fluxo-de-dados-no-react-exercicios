@@ -23,17 +23,6 @@ export const Input = styled.input`
     margin-left: 16px;
 `
 
-export const SendButton = styled.button`
-    background-color: #513b29;
-    border-radius: 8px;
-    padding: 16px;
-    width: 200px;
-    border: none;
-    color: white;
-    margin-top: 32px;
-    cursor: pointer;
-`
-
 export const StyledLabel = styled.label`
     width: 300px;
     display: flex;

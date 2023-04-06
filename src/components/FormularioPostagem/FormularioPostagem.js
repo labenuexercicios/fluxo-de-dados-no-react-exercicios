@@ -1,18 +1,21 @@
-import { FormContainer, Form, Input, StyledLabel, SendButton } from "./styled";
+import { FormContainer, Form, Input, StyledLabel } from "./FormularioPostagem.styled";
 
 export const FormularioCadastro = () => {
   return (
     <FormContainer>
-      <h2>Insira sua postagem abaixo: </h2>
+      <h1>Insira sua postagem abaixo: </h1>
+
       <Form>
         <StyledLabel htmlFor="titulo">
           Titulo:
           <Input id="titulo" />
         </StyledLabel>
+
         <StyledLabel htmlFor="foto">
           Imagem:
           <Input id="foto" />
         </StyledLabel>
+
         <StyledLabel htmlFor="descricao">
           Descrição:
           <Input id="descricao" />
