@@ -26,9 +26,10 @@ Aqui está um exemplo aleatório: ![image](https://user-images.githubusercontent
 
 # Exercício 2
 
-Garanta que os campos do formulário reflitam no menu do perfil (menu lateral esquerdo).<br>
-Não se preocupe em implementar o uso do botão, faça tudo funcionar automaticamente por enquanto (digita no input, atualiza no menu lateral).
+Garanta que a edição dos campos do formulário reflitam nos valores do menu do perfil (menu lateral esquerdo).<br>
+Não se preocupe em implementar o uso do botão, faça tudo funcionar automaticamente por enquanto:
+- digita no input, atualiza automaticamente o menu lateral
 
 # Exercício 3
 
-Agora que tudo está integrado, faça com que a atualização aconteça apenas quando o botão for clicado.
+Agora que tudo está integrado, refatore e faça com que a atualização aconteça apenas quando o botão for clicado.
