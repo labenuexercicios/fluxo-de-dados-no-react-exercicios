@@ -1,6 +1,5 @@
-import styled, { createGlobalStyle } from "styled-components";
-import FormularioPostagem from "./components/FormularioPostagem/FormularioPostagem";
-import TelaDaPostagem from "./components/TelaDaPostagem/TelaDaPostagem";
+import { createGlobalStyle } from "styled-components";
+import ProfileScreen from "./screens/ProfileScreen";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -8,12 +7,20 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-`;
 
-const Container = styled.div`
-  display: flex;
-  height: 100vh;
-  width: 100vw;
+  html {
+    font-family: sans-serif;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #root {
+    height: 100%;
+    width: 100%;
+  }
 `;
 
 function App() {
@@ -21,13 +28,7 @@ function App() {
     <>
       <GlobalStyle />
 
-      <Container>
-
-        <FormularioPostagem />
-
-        <TelaDaPostagem />
-
-      </Container>
+      <ProfileScreen />
     </>
   );
 }
