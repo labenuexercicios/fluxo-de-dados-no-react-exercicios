@@ -33,3 +33,10 @@ Não se preocupe em implementar o uso do botão, faça tudo funcionar automatica
 # Exercício 3
 
 Agora que tudo está integrado, refatore e faça com que a atualização aconteça apenas quando o botão for clicado.
+
+
+* Veja no exemplo abaixo o resultado final esperado:
+
+https://github.com/labenuexercicios/fluxo-de-dados-no-react-exercicios/assets/71137294/5dabeac8-24a9-4202-a546-188ff62fd978
+
+
