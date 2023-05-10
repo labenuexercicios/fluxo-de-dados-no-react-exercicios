@@ -1,6 +1,15 @@
 import { Button, Form, FormWrapper, Input, InputWrapper, Label } from "./ProfileForm.styled";
 
-const ProfileForm = () => {
+const ProfileForm = ({
+  nome,
+  onChangeNome,
+  bio,
+  onChangeBio,
+  imageUrl,
+  onChangeImageUrl,
+  buttonEnviar
+}) => {
+
   return (
     <FormWrapper>
       <h1>Edit your profile</h1>
@@ -13,6 +22,8 @@ const ProfileForm = () => {
             name="name"
             id="name"
             autoComplete="off"
+            value={nome}
+            onChange={onChangeNome}
           />
         </InputWrapper>
 
@@ -23,6 +34,8 @@ const ProfileForm = () => {
             name="bio"
             id="bio"
             autoComplete="off"
+            value={bio}
+            onChange={onChangeBio}
           />
         </InputWrapper>
 
@@ -33,13 +46,18 @@ const ProfileForm = () => {
             name="imageUrl"
             id="imageUrl"
             autoComplete="off"
+            value={imageUrl}
+            onChange={onChangeImageUrl}
           />
         </InputWrapper>
 
-        <Button>Save Changes</Button>
+        <Button onClick={buttonEnviar}>Save Changes</Button>
       </Form>
     </FormWrapper>
   );
 };
 
 export default ProfileForm;
+
+
+//https://codesandbox.io/s/fluxo-de-dados-feedback-forked-t0r07c?file=/src/components/ProfileForm/ProfileForm.js
