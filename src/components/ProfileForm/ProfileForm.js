@@ -1,11 +1,12 @@
 import { Button, Form, FormWrapper, Input, InputWrapper, Label } from "./ProfileForm.styled";
 
-const ProfileForm = () => {
+const ProfileForm = (props) => {
+  const {submit} = props
   return (
     <FormWrapper>
       <h1>Edit your profile</h1>
 
-      <Form>
+      <Form onSubmit={submit}>
         <InputWrapper>
           <Label htmlFor="name">Name</Label>
           <Input
@@ -13,6 +14,7 @@ const ProfileForm = () => {
             name="name"
             id="name"
             autoComplete="off"
+            
           />
         </InputWrapper>
 
@@ -36,7 +38,7 @@ const ProfileForm = () => {
           />
         </InputWrapper>
 
-        <Button>Save Changes</Button>
+        <Button type="submit">Save Changes</Button>
       </Form>
     </FormWrapper>
   );
