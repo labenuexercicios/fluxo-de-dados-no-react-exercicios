@@ -1,7 +1,7 @@
 import { Button, Form, FormWrapper, Input, InputWrapper, Label } from "./ProfileForm.styled";
 
 const ProfileForm = (props) => {
-  const {submit} = props
+  const {submit, name, bio, image, mudarName, mudarBio, mudarImage} = props
   return (
     <FormWrapper>
       <h1>Edit your profile</h1>
@@ -14,7 +14,8 @@ const ProfileForm = (props) => {
             name="name"
             id="name"
             autoComplete="off"
-            
+            //value={name}
+            //onChange={mudarName}
           />
         </InputWrapper>
 
@@ -25,6 +26,8 @@ const ProfileForm = (props) => {
             name="bio"
             id="bio"
             autoComplete="off"
+            //value={bio}
+            //onChange={mudarBio}
           />
         </InputWrapper>
 
@@ -35,6 +38,8 @@ const ProfileForm = (props) => {
             name="imageUrl"
             id="imageUrl"
             autoComplete="off"
+            //value={image}
+            //onChange={mudarImage}
           />
         </InputWrapper>
 

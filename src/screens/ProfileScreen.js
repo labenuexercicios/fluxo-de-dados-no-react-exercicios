@@ -8,12 +8,20 @@ function ProfileScreen() {
   const [bio, setBio] = useState("")
   const [image, setImage] = useState("")
 
- 
+  const mudarName = (event) => {
+    setName(event.target.value)
+  }
+  const mudarBio = (event) => {
+    setBio(event.target.value)
+  }
+  const mudarImage = (event) => {
+    setImage(event.target.value)
+  }
 
   const clearInputs = (event) => {
     event.target.name.value = ""
     event.target.bio.value = ""
-    event.target.image.value = ""
+    event.target.imageUrl.value = ""
   }
   
   const submit = (event) => {
@@ -29,7 +37,8 @@ function ProfileScreen() {
     <ScreenContainer>
       <ProfileMenu name={name} bio={bio} image={image} />
 
-      <ProfileForm submit={submit} name={name} bio={bio} image={image}/>
+      <ProfileForm submit={submit} name={name} bio={bio} image={image}
+      mudarName={mudarName} mudarBio={mudarBio} mudarImage={mudarImage}/>
     </ScreenContainer>
   );
 }
