@@ -19,9 +19,10 @@ Nas práticas vocês conseguiram trabalhar essa movimentação do estado para um
 # Exercício 1
 
 Vamos praticar uma análise mais crítica do aplicativo.<br>
-Desenhe a estrutura da árvore de componentes desse template. Quais componentes existem e como está a descendência de cada um?
-
-Aqui está um exemplo aleatório: ![image](https://user-images.githubusercontent.com/29845719/230494751-9d1a20c3-a654-4a49-b012-1cea2015e92c.png)
+1. Baixe o código e leia-o código cuidadosamente. Durante a leitura, seu objetivo é identificar os diversos componentes que compõem o projeto e qual a relação entre eles(quem é filho? quem é pai?).
+2. Com base na leitura do código, desenhe a estrutura da árvore de componentes. Isso significa que você deve representar graficamente a relação hierárquica entre os diferentes componentes do aplicativo, destacando quais são os "componentes-pais" e seus "componentes-filhos"
+3. Para criar a imagem, você pode usar o [draw.io](https://app.diagrams.net/) ou qualquer outra ferramenta que ajude a desenhar. Pode ser à mão, usando lápis e papel, por exemplo.
+A imagem a seguir é um exemplo aleatório de uma estrutura de uma árvore de componentes: ![image](https://user-images.githubusercontent.com/29845719/230494751-9d1a20c3-a654-4a49-b012-1cea2015e92c.png)
 
 
 # Exercício 2
